@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ptr_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_teamscore"
+                        style="@style/TextScoreHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Team Score(Over)" />
+
+                    <TextView
+                        android:id="@+id/tv_r"
+                        style="@style/TextScoreHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_b"
+                        style="@style/TextScoreHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_4s"
+                        style="@style/TextScoreHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4s"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_6s"
+                        style="@style/TextScoreHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6s"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_batsman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:dividerHeight="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_extras"
+                    style="@style/TextScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Extras"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        style="@style/TextScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_rr"
+                        style="@style/TextScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RR"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/divider">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_bowl"
+                        style="@style/TextScoreBowlingHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Bowling"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_o"
+                        style="@style/TextScoreBowlingHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_m"
+                        style="@style/TextScoreBowlingHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_bo_r"
+                        style="@style/TextScoreBowlingHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_w"
+                        style="@style/TextScoreBowlingHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="W"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_wd"
+                        style="@style/TextScoreBowlingHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wd"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_nb"
+                        style="@style/TextScoreBowlingHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nb"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_bowling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:dividerHeight="1dp" />
+
+            <TextView
+                android:id="@+id/tv_fow"
+                style="@style/TextScoreHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:background="@color/blue"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Fall of Wickets"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/lv_fow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:dividerHeight="1dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_powerplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_powerplay"
+                    style="@style/TextScoreHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:background="@color/blue"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Power Play"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/lv_power"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/Admob_banner" />
+
+</android.support.v4.widget.SwipeRefreshLayout>

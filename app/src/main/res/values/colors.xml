@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="divider">#E30076</color>
+    <color name="indicator">#ffffff</color>
+    <color name="newdivider">#000000</color>
+    <color name="back">#0E1C39</color>
+    <color name="up">#5A277B</color>
+    <color name="action">#E30076</color>
+    <color name="blue">#10A7BA</color>
+    
+
+</resources>

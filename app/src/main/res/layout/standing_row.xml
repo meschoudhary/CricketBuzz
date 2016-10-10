@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_team"
+            style="@style/TextPointtable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="teamName" />
+
+        <TextView
+            android:id="@+id/tv_matches"
+            style="@style/TextPointtable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="matches" />
+
+        <TextView
+            android:id="@+id/tv_won"
+            style="@style/TextPointtable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="won" />
+
+        <TextView
+            android:id="@+id/tv_lost"
+            style="@style/TextPointtable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lost" />
+
+        <TextView
+            android:id="@+id/tv_tied"
+            style="@style/TextPointtable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tied" />
+
+        <TextView
+            android:id="@+id/tv_points"
+            style="@style/TextPointtable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="points" />
+
+        <TextView
+            android:id="@+id/tv_nrr"
+            style="@style/TextPointtable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nrr" />
+    </LinearLayout>
+
+</LinearLayout>

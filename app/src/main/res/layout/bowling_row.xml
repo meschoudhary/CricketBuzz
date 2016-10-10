@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/tv_bowler"
+        style="@style/TextScoreBowling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="bowler" />
+
+    <TextView
+        android:id="@+id/tv_overs"
+        style="@style/TextScoreBowling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O" />
+
+    <TextView
+        android:id="@+id/tv_maiden"
+        style="@style/TextScoreBowling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M" />
+
+    <TextView
+        android:id="@+id/tv_runs"
+        style="@style/TextScoreBowling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R" />
+
+    <TextView
+        android:id="@+id/tv_wickets"
+        style="@style/TextScoreBowling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W" />
+
+    <TextView
+        android:id="@+id/tv_wide"
+        style="@style/TextScoreBowling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wd" />
+
+    <TextView
+        android:id="@+id/tv_noball"
+        style="@style/TextScoreBowling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nb" />
+
+</LinearLayout>
